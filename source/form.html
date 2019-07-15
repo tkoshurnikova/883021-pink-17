@@ -30,9 +30,82 @@
       </nav>
     </header>
     <main class="page-main">
-       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
-
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="page-main__form competition-form" action="http://echo.htmlacademy.ru" method="post">
+        <p class="competition-form__item">
+          <label class="competition-form__text-label" for="surname">Фамилия:</label>
+          <input class="competition-form__text-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+        </p>
+        <p class="competition-form__item">
+          <label class="competition-form__text-label" for="name">Имя:</label>
+          <input class="competition-form__text-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+        </p>
+        <p class="competition-form__item">
+          <label class="competition-form__text-label" for="patronymic">Отчество:</label>
+          <input class="competition-form__text-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+        </p>
+        <fieldset class="competition-form__fieldset achivement-fieldset">
+          <legend class="competition-form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achivement-fieldset__chebox-list chekbox-list">
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
+              <label class="chekbox-list__label" for="shark-selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="sunburn" id="sunburn" checked>
+              <label class="chekbox-list__label" for="sunburn">Обгорел на пляже</label>
+            </li>
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="chuck-norris" id="chuck-norris">
+              <label class="chekbox-list__label" for="chuck-norris">Видел Чака Норриса</label>
+            </li>
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="chekbox-list__label" for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="tower" id="tower" checked>
+              <label class="chekbox-list__label" for="tower">Удержал башню</label>
+            </li>
+            <li class="chekbox-list__item">
+              <input class="visually-hidden chekbox-list__input competition-form__input" type="checkbox" name="hotel-destroy" id="hotel-destroy">
+              <label class="chekbox-list__label" for="hotel-destroy">Разгромил отель</label>
+            </li>
+           </ul>
+         </fieldset>
+         <p class="competition-form__item">
+           <label class="competition-form__text-label" for="phone">Номер телефона</label>
+           <input class="competition-form__text-input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+         </p>
+         <p class="competition-form__item">
+           <label class="competition-form__text-label" for="email">Адрес почты</label>
+           <input class="competition-form__text-input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+         </p>
+         <fieldset class="competition-form__fieldset app-fieldset">
+          <legend class="competition-form__legend">С каким приложением путешествовали?</legend>
+          <ul class="app-fieldset__radio-list radio-list">
+            <li class="radio-list__item">
+              <input class="visually-hidden radio-list__input competition-form__input" type="radio" name="app" id="ios" checked>
+              <label class="radio-list__label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="radio-list__item">
+              <input class="visually-hidden radio-list__input competition-form__input" type="radio" name="app" id="android">
+              <label class="radio-list__label" for="android">Pink на Android</label>
+            </li>
+            <li class="radio-list__item">
+              <input class="visually-hidden radio-list__input competition-form__input" type="radio" name="app" id="windows">
+              <label class="radio-list__label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+         </fieldset>
+         <p class="competition-form__item">
+          <label class="competition-form__text-label" for="emotions">Опишите свои эмоции</label>
+          <textarea class="competition-form__textarea" name="emotions" rows="6" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </p>
+        <button class="competition-form__submit-btn" type="submit" name="form-submit">Отправить форму</button>
+        <p class="competition-form__note"><span class="competition-form__mark">*</span> — обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <a href="index.html" class="page-footer__logo">

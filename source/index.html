@@ -31,10 +31,10 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "Пинк" - взгляните на жизнь иначе!</h1>
-      <section class="intro">
+      <section class="page-main__intro intro">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <img class="intro__image" src="http://placehold.it/320x462" width="320" height="462" alt="Взгляните на жизнь иначе!">
-        <a class="intro__download-btn btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <a class="intro__download-btn btn btn--download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="intro__list download-list">
           <li class="download-list__item download-list__item--ios">
             <a href="https://www.apple.com/ru/ios/app-store/">Скачать на iPhone, iPad, OS X</a>
@@ -48,7 +48,7 @@
         </ul>
         <p class="intro__available-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <section class="advantages">
+      <section class="page-main__advantages advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages__intro">Устали от серости мегаполиса?</p>
         <p class="advantages__intro">Нам есть, что вам предложить!</p>
@@ -67,6 +67,79 @@
           </li>
         </ul>
         <img class="advantages__image" src="http://placehold.it/157x320" width="157" height="320" alt="Как работает приложение">
+      </section>
+      <section class="page-main__reviews reviews">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <p class="reviews__toggles slider-toggles">
+            <button class="slider-toggles__item slider-toggles__item--active" type="button">1</button>
+            <button class="slider-toggles__item" type="button">2</button>
+            <button class="slider-toggles__item" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="page-main__price price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="price__list">
+          <table class="price__item tariff">
+            <caption class="tariff__heading">
+              <p class="tariff__name">Стандарт</p>
+              <p class="tariff__price">3,99 USD</p>
+            </caption>
+            <tr>
+              <td class="tariff__feature">
+                Розовый фильтр
+              </td>
+              <td class="tariff__feature-tick tariff__feature-tick--yes">
+                Да
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__feature">
+                Смайлики
+              </td>
+              <td class="tariff__feature-tick tariff__feature-tick--yes">
+                Да
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__feature">
+                Комментарии
+              </td>
+              <td class="tariff__feature-tick tariff__feature-tick--no">
+                Нет
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="price__toggles slider-toggles">
+          <button class="slider-toggles__item" type="button">1</button>
+          <button class="slider-toggles__item slider-toggles__item--active" type="button">2</button>
+          <button class="slider-toggles__item" type="button">3</button>
+        </p>
+      </section>
+      <section class="page-main__contacts contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__block">
+          Звоните:
+          <a class="contacts__item" href="+78125556666">+7 (812) 555-66-66</a>
+        </p>
+        <p class="contacts__block">
+          Пишите:
+          <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <div class="contacts__block">
+          Приезжайте в гости:
+          <address  class="contacts__item">ул. Большая Конюшенная, 19/8</address>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x210" width="320" height="210" alt="Временный плейсхолдер">
+        </div>
       </section>
     </main>
   </body>
