@@ -106,22 +106,22 @@
       </div>
       <section class="page-main__posting">
         <p class="page-main__posting-intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="page-main__posting-form posting-form">
+        <form class="page-main__posting-form posting-form" action="http://echo.htmlacademy.ru" method="post">
           <img class="posting-form__image" src="http://placehold.it/280x374" width="280" height="374" alt="Ваша фотография">
           <p class="posting-form__indicator">
-            <label class="visually-hidden posting-form__label posting-form__label--sharp" for="sharp">Резкость</label>
+            <label class="visually-hidden posting-form__label posting-form__label--active" for="sharp">Резкость</label>
             <input class="posting-form__range-input" type="range" min="0" max="100" name="sharp" id="sharp">
           </p>
           <p class="posting-form__indicator">
-            <label class="visually-hidden posting-form__label posting-form__label--saturation" for="saturation">Насыщенность</label>
+            <label class="visually-hidden posting-form__label" for="saturation">Насыщенность</label>
             <input class="posting-form__range-input" type="range" min="0" max="100" name="saturation" id="saturation">
           </p>
           <p class="posting-form__indicator">
-            <label class="visually-hidden posting-form__label posting-form__label--contrast" for="contrast">Контраст</label>
+            <label class="visually-hidden posting-form__label" for="contrast">Контраст</label>
             <input class="posting-form__range-input" type="range" min="0" max="100" name="contrast" id="contrast">
           </p>
           <button class="posting-form__btn btn btn--posting" type="submit">Запостить</button>
-          <button class="posting-form__btn btn btn--cancel" type="button">Отмена</button>
+          <button class="posting-form__btn btn btn--cancel" type="reset">Отмена</button>
         </form>
       </section>
     </main>
