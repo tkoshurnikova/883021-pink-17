@@ -88,9 +88,9 @@
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <p class="reviews__toggles slider-toggles">
-            <button class="slider-toggles__item slider-toggles__item--active" type="button">1</button>
-            <button class="slider-toggles__item" type="button">2</button>
-            <button class="slider-toggles__item" type="button">3</button>
+            <button class="slider-toggles__item slider-toggles__item--active" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider-toggles__item" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider-toggles__item" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -107,7 +107,7 @@
                 Розовый фильтр
               </td>
               <td class="tariff__feature-tick tariff__feature-tick--yes">
-                Да
+                <span class="visually-hidden">Да</span>
               </td>
             </tr>
             <tr>
@@ -115,7 +115,7 @@
                 Смайлики
               </td>
               <td class="tariff__feature-tick tariff__feature-tick--yes">
-                Да
+                <span class="visually-hidden">Да</span>
               </td>
             </tr>
             <tr>
@@ -123,34 +123,36 @@
                 Комментарии
               </td>
               <td class="tariff__feature-tick tariff__feature-tick--no">
-                Нет
+                <span class="visually-hidden">Нет</span>
               </td>
             </tr>
           </table>
         </div>
         <p class="price__toggles slider-toggles">
-          <button class="slider-toggles__item" type="button">1</button>
-          <button class="slider-toggles__item slider-toggles__item--active" type="button">2</button>
-          <button class="slider-toggles__item" type="button">3</button>
+          <button class="slider-toggles__item" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider-toggles__item slider-toggles__item--active" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider-toggles__item" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </section>
       <section class="page-main__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__block">
-          Звоните:
-          <a class="contacts__item" href="+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__block">
-          Пишите:
-          <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <div class="contacts__block">
-          Приезжайте в гости:
-          <address  class="contacts__item">ул. Большая Конюшенная, 19/8</address>
+        <div class="contacts__wrapper">
+          <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__block">
+            Звоните:
+            <a class="contacts__item" href="+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__block">
+            Пишите:
+            <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <div class="contacts__block">
+            Приезжайте в гости:
+            <address  class="contacts__item">ул. Большая Конюшенная, 19/8</address>
+          </div>
         </div>
         <div class="contacts__map">
-          <img src="http://placehold.it/320x210" width="320" height="210" alt="Временный плейсхолдер">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="210" alt="Временный плейсхолдер">
         </div>
       </section>
     </main>
