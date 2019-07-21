@@ -1,4 +1,6 @@
 .intro {
+  padding-bottom: 30px;
+
   text-align: center;
 
   background-color: #1d2631;
@@ -14,9 +16,24 @@
   background-repeat: no-repeat;
 }
 
+.intro__image-text {
+  margin: 0;
+  padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+}
+
 .intro__image {
   position: relative;
-  top: 176px;
+  top: 25px;
 
   width: 258px;
   height: 286px;
@@ -29,4 +46,98 @@
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+}
+
+.intro__download-btn {
+  margin: 25px auto;
+}
+
+@media (min-width: 660px) {
+  .intro {
+    padding-bottom: 0;
+  }
+
+  .intro__image-block {
+    width: 660px;
+    height: 730px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px 0;
+  }
+
+  .intro__image {
+    position: relative;
+    top: 99px;
+    left: 100px;
+  }
+
+  .intro__image-text {
+    width: 300px;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+    font-size: 40px;
+  }
+
+  .intro__download-wrapper {
+    width: 300px;
+    margin-top: -375px;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro__download-btn {
+    margin-bottom: 45px;
+  }
+
+  .intro__available-for {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro__image-block {
+    width: 1200px;
+    height: 853px;
+    top: -110px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 0;
+  }
+
+  .intro__image-wrapper {
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+  }
+
+  .intro__image {
+    position: relative;
+    top: 567px;
+    left: 100px;
+  }
+
+  .intro__image-text {
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 50px;
+  }
+
+  .intro__download-wrapper {
+    margin-top: -515px;
+    margin-left: 125px;
+  }
+
+  .intro__download-btn {
+    margin-bottom: 70px;
+  }
+
+  .intro__available-for {
+    margin-top: 50px;
+  }
 }
