@@ -1,10 +1,14 @@
+.page-main {
+  margin: 0 auto;
+}
+
 .page-main__title {
   min-height: 237px;
   width: 320px;
   padding-top: 100px;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -39,7 +43,7 @@
 
 @media (min-width: 660px) {
   .page-main__title {
-    width: 660px;
+    width: 100%;
     min-height: 440px;
     padding-top: 190px;
     padding-left: 140px;
@@ -59,8 +63,9 @@
   .page-main__intro {
     padding-top: 90px;
     padding-bottom: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
 
     font-size: 18px;
   }
@@ -70,9 +75,8 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-main__title {
-    width: 1200px;
     margin-top: -110px;
     padding-top: 175px;
     padding-left: 400px;
@@ -90,7 +94,7 @@
   .page-main__intro {
     padding-top: 95px;
     padding-bottom: 90px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }

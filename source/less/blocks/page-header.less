@@ -1,9 +1,13 @@
 .page-header {
+  width: 100%;
+
+
   background-color: #283645;
 }
 
 .page-header__top {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   display: flex;
   justify-content: space-between;
@@ -11,9 +15,8 @@
   border-bottom: 1px solid #000000;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-header {
-    width: 1200px;
     position: relative;
     z-index: 3;
 
@@ -22,6 +25,10 @@
 
   .page-header__logo {
     align-self: center;
+  }
+
+  .page-header__nav-toggler {
+    display: none;
   }
 
   .page-header__wrapper {
