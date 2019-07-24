@@ -1,3 +1,47 @@
 .page-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+
+
+  background-color: #283645;
+}
+
+.page-header__top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #000000;
+}
+
+@media (min-width: 960px) {
+  .page-header {
+    position: relative;
+    z-index: 3;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__logo {
+    align-self: center;
+  }
+
+  .page-header__nav-toggler {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-header__top {
+    border: none;
+  }
 }
