@@ -7,13 +7,6 @@
   font-style: normal;
 }
 
-.contacts-wrapper {
-  padding-left: 40px;
-  padding-right: 40px;
-
-  background-color: #ffffff;
-}
-
 .contacts__intro {
   color: #283645;
 }
@@ -43,4 +36,27 @@
 
   object-fit: cover;
   object-position: 0 -435px;
+}
+
+@media (min-width: 960px) {
+  .contacts__intro {
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 50px;
+  }
+
+  .contats__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__block {
+    margin-top: 0;
+  }
+
+  .contacts__block:nth-child(2) {
+    order: 3;
+  }
 }
