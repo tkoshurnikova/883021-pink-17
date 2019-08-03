@@ -25,6 +25,11 @@
 
 .page-main__intro,
 .page-main__posting {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 45px;
+  padding-bottom: 21px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -41,6 +46,10 @@
   padding-right: 30px;
 }
 
+.page-main__intro-element {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .page-main__title {
     width: 100%;
@@ -55,24 +64,29 @@
     background-position: -275px 0;
   }
 
+  .page-main__intro-element {
+    display: block;
+  }
+
   .page-main__title--form {
     padding-left: 90px;
     padding-right: 90px;
   }
 
   .page-main__intro {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 21px;
     padding-left: 0;
     padding-right: 0;
     box-sizing: border-box;
 
     font-size: 18px;
   }
-}
 
-.page-main__intro-element {
-  display: none;
+  .page-main__intro--form {
+    padding-left: 57px;
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: 960px) {

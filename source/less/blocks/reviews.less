@@ -25,6 +25,10 @@
   color: #000000;
 }
 
+.reviews__author-comment {
+  display: none;
+}
+
 .reviews__text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -32,4 +36,53 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+.reviews__toggles {
+  margin-top: 42px;
+}
+
+@media (min-width: 660px) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-comment {
+    margin-top: 10px;
+
+    display: block;
+
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews {
+    padding-top: 190px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 70px;
+  }
+
+  .reviews__text {
+    width: 695px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+  }
+
+  .reviews__author {
+    font-size: 24px;
+  }
+
+  .reviews__author-comment {
+    font-size: 18px;
+  }
 }
