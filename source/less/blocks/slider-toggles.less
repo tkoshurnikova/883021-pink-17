@@ -21,7 +21,24 @@
   cursor: pointer;
 }
 
+.slider-toggles__item:hover,
+.slider-toggles__item:focus {
+  background-color: rgba(40, 54, 69, 0.96);
+  opacity: 0.6;
+}
+
+.slider-toggles__item:active {
+  opacity: 0.1;
+}
+
 .slider-toggles__item--active {
   background-color: transparent;
   border: 3px solid #283645;
+}
+
+.slider-toggles__item--active:hover,
+.slider-toggles__item--active:focus,
+.slider-toggles__item--active:active {
+  background-color: transparent;
+  opacity: 1;
 }

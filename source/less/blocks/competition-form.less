@@ -25,6 +25,17 @@
   border-radius: 2px;
 }
 
+.competition-form__text-input:hover,
+.competition-form__textarea:hover {
+  border-color: #283645;
+}
+
+.competition-form__text-input:focus,
+.competition-form__textarea:focus {
+  border-color: #d22856;
+  outline: none;
+}
+
 .competition-form__textarea {
   margin-top: 10px;
   padding: 15px;
@@ -116,6 +127,21 @@
   border: 2px solid #2aab6d;
   border-radius: 2px;
   background-color: #2aab6d;
+
+  cursor: pointer;
+}
+
+.competition-form__submit-btn:hover,
+.competition-form__submit-btn:focus {
+  background-color: #1c9b5e;
+}
+
+.competition-form__submit-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.competition-form__submit-btn:disabled {
+  background-color: #e5e5e5;
 }
 
 .competition-form__note {

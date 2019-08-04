@@ -9,6 +9,8 @@
 }
 
 .chekbox-list__label {
+  position: relative;
+
   padding-left: 68px;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -16,6 +18,46 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
+  cursor: pointer;
+}
+
+.chekbox-list__label::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 5px;
+
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+
+  border: 2px solid #e5e5e5;
+  background-color: transparent;
+}
+
+.chekbox-list__input:checked + .chekbox-list__label::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 13px;
+  z-index: 5;
+
+  width: 20px;
+  height: 10px;
+  transform: rotate(-45deg);
+
+  border-radius: 2px;
+  border-left: 2px solid #d22856;
+  border-bottom: 2px solid #d22856;
+}
+
+.chekbox-list__input:hover + .chekbox-list__label::before {
+  border-color: #283645;
+}
+
+.chekbox-list__input:focus + .chekbox-list__label::before {
+  border-color: #d22856;
 }
 
 @media (min-width: 960px) {

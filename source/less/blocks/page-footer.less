@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 
   text-align: center;
@@ -7,6 +7,15 @@
 
 .page-footer--mobile-hidden {
   display: none;
+}
+
+.page-header__logo-svg:hover path,
+.page-header__logo-svg:focus path {
+  fill: #d22856;
+}
+
+.page-header__logo-svg:active path {
+  opacity: 0.3;
 }
 
 .page-footer__list {
@@ -24,9 +33,18 @@
   margin-left: 10px;
 }
 
-.page-footer__copyright-link svg {
+.page-footer__copyright-link-svg {
   width: 37px;
   height: 55px;
+}
+
+.page-footer__copyright-link-svg:hover path,
+.page-footer__copyright-link-svg:focus path {
+  fill: #283645;
+}
+
+.page-footer__copyright-link-svg:active path {
+  opacity: 0.3;
 }
 
 @media (min-width: 660px) {
@@ -52,5 +70,9 @@
 @media (min-width: 960px) {
   .page-footer {
     padding-top: 40px;
+  }
+
+  .page-footer__copyright {
+    font-size: 18px;
   }
 }
