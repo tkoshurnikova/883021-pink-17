@@ -1,17 +1,43 @@
 .page-header {
+  position: relative;
+
   width: 100%;
+  z-index: 5;
 
   background-color: #283645;
 }
 
 .page-header__top {
   padding-top: 20px;
-  padding-bottom: 20px;
 
   display: flex;
   justify-content: space-between;
 
   border-bottom: 1px solid #000000;
+}
+
+.page-header__logo-svg:hover path,
+.page-header__logo-svg:focus path {
+  fill: #d22856;
+}
+
+.page-header__logo-svg:active path {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.page-header__nav-toggler {
+  width: 50px;
+  height: 50px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.page-header__nav-toggler--close {
+  background-image: url("../img/icon-menu-cross.svg");
+  background-position: 27px 1px;
 }
 
 @media (min-width: 960px) {

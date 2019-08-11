@@ -1,5 +1,6 @@
 .intro {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+  margin-top: -67px;
 
   text-align: center;
 
@@ -20,7 +21,7 @@
 
 .intro__image-text {
   margin: 0;
-  padding-top: 95px;
+  padding-top: 90px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -34,12 +35,15 @@
 
 .intro__image {
   position: relative;
-  top: 25px;
+  top: 30px;
+  left: -31px;
 
   width: 258px;
 }
 
 .intro__available-for {
+  margin-top: 23px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -49,16 +53,18 @@
 }
 
 .intro__download-wrapper {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .intro__download-btn {
   margin: 25px auto;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 660px) {
   .intro {
     padding-bottom: 0;
+    margin-top: -111px;
   }
 
   .intro__image-block {
@@ -77,7 +83,7 @@
 
   .intro__image-text {
     width: 300px;
-    padding-top: 200px;
+    padding-top: 203px;
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
@@ -87,31 +93,37 @@
 
   .intro__download-wrapper {
     width: 300px;
-    margin-top: -245px;
+    margin-top: -287px;
 
     z-index: 2;
   }
 
   .intro__download-btn {
+    width: 100%;
+
     margin-bottom: 45px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .intro__available-for {
-    margin-top: 40px;
+    margin-top: 37px;
+
+    font-size: 18px;
   }
 }
 
 @media (min-width: 960px) {
   .intro {
     position: relative;
-    top: -110px;
+    top: 3px;
   }
 
   .intro__image-block {
     height: 853px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -680px 0;
+    background-position: -650px 0;
   }
 
   .intro__image-wrapper {
@@ -129,17 +141,24 @@
   }
 
   .intro__image-text {
+    padding-top: 218px;
     padding-left: 0;
     padding-right: 0;
 
     font-size: 50px;
   }
 
+  .intro__download-wrapper {
+    margin-top: -259px;
+  }
+
   .intro__download-btn {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
+
+    font-size: 21px;
   }
 
   .intro__available-for {
-    margin-top: 50px;
+    margin-top: 55px;
   }
 }

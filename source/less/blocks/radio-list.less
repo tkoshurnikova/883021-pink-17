@@ -9,6 +9,8 @@
 }
 
 .radio-list__label {
+  position: relative;
+
   padding-left: 69px;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -16,4 +18,43 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
+  cursor: pointer;
+}
+
+.radio-list__label::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 5px;
+
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.radio-list__input:checked + .radio-list__label::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 16px;
+  z-index: 5;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.radio-list__input:hover + .radio-list__label::before {
+  border-color: #283645;
+}
+
+.radio-list__input:focus + .radio-list__label::before {
+  border-color: #d22856;
 }
