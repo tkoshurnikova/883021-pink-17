@@ -80,17 +80,40 @@
     justify-content: space-between;
 
     padding-top: 56px;
+    padding-bottom: 45px;
+  }
+
+  .posting-form__image {
+    width: 300px;
+    height: 400px;
   }
 
   .posting-form__indicators-wrapper {
     flex-direction: column;
+
+    width: 270px;
     margin-top: 0;
+    padding-bottom: 70px;
   }
 
   .posting-form__indicator {
     position: relative;
     align-self: flex-start;
-    margin-top: 20px;
+    margin-top: 24px;
+  }
+
+  .posting-form__indicator::after {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: -15px;
+    left: -5px;
+  }
+
+  .posting-form__indicator:first-child {
+    margin-top: 10px;
   }
 
   .posting-form__label-svg {
@@ -129,15 +152,101 @@
     border: 2px solid #d22856;
     border-radius: 50%;
   }
+
+  .posting-form__label--sharp::after {
+    left: 197px;
+  }
+
+  .posting-form__label--saturation::after {
+    left: 77px;
+  }
+
+  .posting-form__label--saturation svg {
+    width: 24px;
+    padding-top: 3px;
+  }
+
+  .posting-form__label--contrast::after {
+    left: 147px;
+  }
+
+  .posting-form__label--contrast svg {
+    width: 16px;
+    height: 16px;
+    padding-left: 4px;
+  }
 }
 
 @media (min-width: 960px) {
   .posting-form {
-    justify-content: space-around;
+    width: 940px;
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-right: 60px;
+    justify-content: space-between;
+  }
+
+  .posting-form__indicators-wrapper {
+    width: 410px;
+    padding-bottom: 136px;
+  }
+
+  .posting-form__indicator {
+    margin-top: 5px;
+  }
+
+  .posting-form__indicator:first-child {
+    margin-top: 0;
+  }
+
+  .posting-form__label::before {
+    bottom: 32px;
+    left: 92px;
+    width: 288px;
+  }
+
+  .posting-form__label--sharp::after {
+    bottom: 26px;
+    left: 163px;
+  }
+
+  .posting-form__label--saturation::after {
+    left: 339px;
+  }
+
+  .posting-form__label--contrast::after {
+    left: 252px;
+  }
+
+  .posting-form__indicator::after {
+    left: 0;
+    bottom: -3px;
+    width: 410px;
   }
 
   .posting-form__btns-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .posting-form__label--sharp svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .posting-form__label--saturation svg {
+    width: 48px;
+    height: 43px;
+    padding-top: 2px;
+  }
+
+  .posting-form__label--contrast svg {
+    width: 32px;
+    height: 32px;
+    padding-top: 7px;
+  }
+
+  .posting-form__label::after {
+    bottom: 26px;
   }
 }

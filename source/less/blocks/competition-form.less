@@ -67,6 +67,10 @@
   margin-top: 19px;
 }
 
+.competition-form__legend--contacts {
+  display: none;
+}
+
 .competition-form__block--app {
   margin-top: -8px;
 
@@ -79,6 +83,13 @@
 
 .competition-form__block--emotions {
   margin-top: 20px;
+}
+
+.competition-form__text-label--emotions {
+  display: block;
+  text-align: center;
+  padding-left: 0;
+  padding-top: 13px;
 }
 
 .competition-form__fieldset {
@@ -108,12 +119,9 @@
   background-color: transparent;
 }
 
-.competition-form__legend--contacts {
-  background-color: transparent;
-}
-
 .competition-form__btn-wrapper {
-  margin-top: -4px;
+  margin-top: 44px;
+  margin-bottom: 34px;
 }
 
 .competition-form__submit-btn {
@@ -163,6 +171,10 @@
   color: #d22856;
 }
 
+.competition-form__mobile-hidden-note {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .competition-form {
     display: flex;
@@ -193,8 +205,19 @@
     margin-top: 12px;
   }
 
+  .competition-form__legend--contacts {
+    display: inline;
+    background-color: transparent;
+  }
+
   .competition-form__block--achivement {
     order: 3;
+
+    margin-top: 12px;
+  }
+
+  .competition-form__checkbox-list {
+    margin-bottom: 6px;
   }
 
   .competition-form__block--emotions {
@@ -206,6 +229,9 @@
     justify-content: space-between;
 
     order: 5;
+
+    margin-top: -2px;
+    margin-bottom: 48px;
   }
 
   .competition-form__item {
@@ -218,6 +244,7 @@
 
   .competition-form__item--contacts {
     flex-wrap: wrap;
+    margin-top: 11px;
   }
 
   .competition-form__text-label {
@@ -228,8 +255,11 @@
 
   .competition-form__text-label--contacts {
     order: 2;
+    position: relative;
 
     width: 100%;
+    padding-left: 20px;
+    margin-bottom: 8px;
   }
 
   .competition-form__text-input {
@@ -239,17 +269,51 @@
   .competition-form__text-input--phone,
   .competition-form__text-input--email {
     width: 500px;
+    padding-right: 58px;
+    margin-bottom: 3px;
     flex-grow: 0;
   }
+
+  .competition-form__text-label--phone::after,
+  .competition-form__text-label--email::after {
+    content: "";
+    position: absolute;
+    right: 39px;
+    top: -71px;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .competition-form__text-label--phone::after {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 20px 20px;
+  }
+
+  .competition-form__text-label--email::after {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 13px;
+  }
+
 
   .competition-form__fieldset {
     position: relative;
 
     margin-top: 25px;
-    padding-left: 46px;
+    padding-left: 55px;
+    padding-bottom: 45px;
 
     background-color: transparent;
     border: 2px solid #e5e5e5;
+  }
+
+  .competition-form__fieldset--contacts {
+    padding-bottom: 2px;
   }
 
   .competition-form__legend {
@@ -262,24 +326,26 @@
 
   .competition-form__textarea {
     width: 100%;
+    margin-top: -4px;
+    height: 193px;
   }
 
   .competition-form__item--emotions {
     flex-direction: column;
 
     padding-left: 60px;
-    padding-right: 50px;
+    padding-right: 60px;
     padding-top: 0;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
   }
 
   .competition-form__text-label--emotions {
     position: relative;
-    top: -22px;
+    top: -35px;
 
-    padding-left: 30px;
+    padding-left: 47px;
     padding-right: 30px;
 
     background-color: #ffffff;
@@ -300,33 +366,47 @@
   .competition-form {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .competition-form__block {
+    box-sizing: border-box;
   }
 
   .competition-form__block--personal {
     width: 470px;
     margin-right: 0;
-    padding-right: 0;
+    padding-right: 35px;
+    padding-left: 0;
+    margin-top: -56px;
   }
 
   .competition-form__block--app {
     width: 470px;
     margin-left: 0;
     padding-left: 0;
+    padding-right: 0;
+    margin-top: -64px;
   }
 
   .competition-form__fieldset--app {
     margin-left: 35px;
+    padding-left: 0;
   }
 
   .competition-form__fieldset--contacts {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
     box-sizing: border-box;
   }
 
   .competition-form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .competition-form__block--contacts {
+    margin-top: -3px;
   }
 
   .competition-form__item--contacts {
@@ -343,11 +423,34 @@
     padding-left: 35px;
   }
 
+  .competition-form__text-label--contacts {
+    margin-bottom: -6px;
+  }
+
+  .competition-form__text-label--phone::after,
+  .competition-form__text-label--email::after {
+    right: -16px;
+  }
+
   .competition-form__item--emotions {
     padding-bottom: 40px;
   }
 
   .competition-form__textarea {
     height: 130px;
+    margin-top: -8px;
+  }
+
+  .competition-form__checkbox-list {
+    margin-bottom: -21px;
+  }
+
+  .competition-form__btn-wrapper {
+    margin-top: -5px;
+    margin-bottom: 3px;
+  }
+
+  .competition-form__mobile-hidden-note {
+    display: inline;
   }
 }
