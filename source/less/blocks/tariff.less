@@ -3,6 +3,10 @@
   padding-bottom: 33px;
 
   background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
 }
 
 .tariff__wrapper {
@@ -27,6 +31,32 @@
   color: #ffffff;
 
   background-color: #283645;
+}
+
+.tariff__heading--hit {
+  position: relative;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.tariff__heading--hit::before {
+  content: "хит";
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  transform: rotate(-45deg);
 }
 
 .tariff__cell,
@@ -112,6 +142,17 @@
 .tariff__cell--empty {
   background-color: transparent;
   border: none;
+}
+
+@media (min-width: 660px) and (max-width: 960px) {
+  .tariff__heading--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .tariff__heading--hit::before {
+    left: 7px;
+    top: 4px;
+  }
 }
 
 @media (min-width: 660px) {

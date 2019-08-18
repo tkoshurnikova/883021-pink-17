@@ -7,12 +7,43 @@
     padding-bottom: 65px;
 
     display: block;
+    position: relative;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 58px;
+    background-size: 238px 276px;
+  }
+
+  .effect::before {
+    content: "24";
+    display: block;
+    position: absolute;
+    top: 114px;
+    left: 39px;
+
+    width: 202px;
+    height: 202px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    border: 14px solid #d22856;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150px;
+    color: #d22856;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .effect__wrapper {
     padding-left: 310px;
     padding-right: 2px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .effect__title {
@@ -57,16 +88,32 @@
     padding-bottom: 113px;
 
     background-color: #f2f2f2;
+    background-size: 298px 345px;
+    background-position: 11px 34px;
+  }
+
+  .effect::before {
+    top: 103px;
+    left: 32px;
+
+    width: 253px;
+    height: 253px;
+    padding-top: 9px;
+
+    font-size: 120px;
+    line-height: 187px;
+
+    border-width: 17px;
   }
 
   .effect__wrapper {
-    padding-left: 366px;
+    padding-left: 376px;
     box-sizing: border-box;
   }
 
   .effect__title {
     padding-right: 0;
-    padding-top: 115px;
+    padding-top: 128px;
 
     line-height: 30px;
   }

@@ -26,7 +26,7 @@
   position: absolute;
   content: "";
   top: -7px;
-  left: 5px;
+  left: -1px;
 
   width: 37px;
   height: 37px;
@@ -39,8 +39,8 @@
 .chekbox-list__input:checked + .chekbox-list__label::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 13px;
+  top: 1px;
+  left: 7px;
   z-index: 5;
 
   width: 20px;
@@ -60,6 +60,16 @@
   border-color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .chekbox-list__item:first-child {
+    margin-top: 37px;
+  }
+
+  .chekbox-list__label {
+    padding-left: 61px;
+  }
+}
+
 @media (min-width: 960px) {
   .chekbox-list {
     display: flex;
@@ -67,9 +77,15 @@
     flex-direction: column;
 
     height: 200px;
+    margin-top: -24px;
   }
 
   .chekbox-list__item {
     width: 33%;
+    margin-right: 15px;
+  }
+
+  .chekbox-list__item:first-child {
+    margin-top: 52px;
   }
 }
