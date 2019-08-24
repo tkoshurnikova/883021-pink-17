@@ -50,6 +50,10 @@
   margin-top: 32px;
 }
 
+.reviews__arrow {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .reviews__item {
     display: flex;
@@ -101,32 +105,40 @@
     font-size: 18px;
   }
 
-  .reviews__text::before,
-  .reviews__text::after {
-    content: "";
+  .reviews__arrow {
     display: block;
     position: absolute;
+    top: 84px;
 
     width: 22px;
     height: 41px;
 
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: transparent;
+    border: none;
     opacity: 0.3;
 
     cursor: pointer;
   }
 
-  .reviews__text::before {
-    top: 28px;
-    left: -123px;
+  .reviews__arrow--left {
+    left: -3px;
   }
 
-  .reviews__text::after {
-    transform: rotate(180deg);
-    top: 28px;
-    right: -123px;
+  .reviews__arrow--right {
+    right: 8px;
+  }
+
+  .reviews__arrow svg {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
+  .reviews__arrow svg:hover,
+  .reviews__arrow svg:focus {
+    fill: rgba(40, 54, 69, 0.6);
+  }
+
+  .reviews__arrow svg:active {
+    fill: rgba(40, 54, 69, 0.1);
   }
 
   .reviews__author {

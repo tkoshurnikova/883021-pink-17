@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -139,11 +139,19 @@
       <section class="page-main__reviews reviews container">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list">
+          <button class="reviews__arrow reviews__arrow--left" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M2.045 20.859L21.458 1.446A.847.847 0 0020.261.248L.248 20.261a.846.846 0 000 1.197l20.013 20.013a.843.843 0 001.198 0 .847.847 0 000-1.198L2.045 20.859z"/></svg>
+          </button>
           <blockquote class="reviews__item">
             <cite class="reviews__author">Николай Петров</cite>
             <span class="reviews__author-comment">25 лет, водитель трамвая</span>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
+          <button class="reviews__arrow reviews__arrow--right" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M19.661 20.859L.248 1.446A.847.847 0 011.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 01-1.198 0 .847.847 0 010-1.198l19.414-19.414z"/></svg>
+          </button>
           <p class="reviews__toggles slider-toggles">
             <button class="slider-toggles__item slider-toggles__item--active" type="button"><span class="visually-hidden">1</span></button>
             <button class="slider-toggles__item" type="button"><span class="visually-hidden">2</span></button>
