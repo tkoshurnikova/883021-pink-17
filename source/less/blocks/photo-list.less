@@ -25,15 +25,18 @@
 }
 
 .photo-list__photo--panorama {
+  position: relative;
+  text-decoration: none;
+
   width: 360px;
 }
 
-.photo-list__item--panorama::before {
+.photo-list__photo--panorama::after {
   content: "Панорама дня";
   display: block;
   position: absolute;
-  top: 0;
-  right: 44px;
+  top: -122px;
+  right: 30px;
 
   width: 140px;
   height: 36px;
@@ -49,6 +52,7 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
 
   z-index: 10;
 }
@@ -197,9 +201,9 @@
     margin-bottom: 33px;
   }
 
-  .photo-list__item--panorama::before {
-    top: 85px;
-    right: 0;
+  .photo-list__photo--panorama::after {
+    top: 57px;
+    right: 20px;
   }
 
   .photo-list__likes {
@@ -214,7 +218,7 @@
   }
 
   .photo-list__likes-icon {
-    padding-right: 37px;
+    padding-right: 38px;
   }
 
   .photo-list__likes--panorama {
@@ -275,7 +279,7 @@
     right: -761px;
   }
 
-  .photo-list__item--panorama::before {
+  .photo-list__photo--panorama::after {
     top: 54px;
     right: 10px;
   }

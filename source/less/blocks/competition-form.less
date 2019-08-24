@@ -25,6 +25,10 @@
   border-radius: 2px;
 }
 
+.competition-form__text-input {
+  max-height: 64px;
+}
+
 .competition-form__text-input:hover,
 .competition-form__textarea:hover {
   border-color: #283645;
@@ -49,7 +53,6 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
   color: #283645;
 }
 
@@ -206,7 +209,7 @@
   }
 
   .competition-form__legend--contacts {
-    display: inline;
+    display: block;
     background-color: transparent;
   }
 
@@ -300,11 +303,10 @@
     background-size: 18px 13px;
   }
 
-
   .competition-form__fieldset {
     position: relative;
 
-    margin-top: 25px;
+    margin-top: 44px;
     padding-left: 55px;
     padding-bottom: 45px;
 
@@ -318,7 +320,7 @@
 
   .competition-form__legend {
     position: relative;
-    top: -20px;
+    padding-top: 0;
 
     background-color: transparent;
     color: #d22856;
@@ -359,6 +361,10 @@
 
   .competition-form__note {
     margin-top: 73px;
+  }
+
+  .competition-form__contacts-wrapper {
+    padding-top: 22px;
   }
 }
 
