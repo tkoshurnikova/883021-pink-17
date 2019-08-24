@@ -9,11 +9,10 @@
 
 .page-header__top {
   padding-top: 20px;
+  min-height: 51px;
 
   display: flex;
   justify-content: space-between;
-
-  border-bottom: 1px solid #000000;
 }
 
 .page-header__logo-svg:hover path,
@@ -33,11 +32,21 @@
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
+
+  cursor: pointer;
 }
 
-.page-header__nav-toggler--close {
+.page-header__nav-toggler--opened {
   background-image: url("../img/icon-menu-cross.svg");
   background-position: 27px 1px;
+}
+
+.page-header__nav-toggler--closed {
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.page-header__nav-toggler--no-js {
+  display: none;
 }
 
 .page-header__logo-desktop {
