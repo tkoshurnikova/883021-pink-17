@@ -47,7 +47,19 @@
   opacity: 0.3;
 }
 
+.page-footer__logo-tablet {
+  display: none;
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
 @media (min-width: 660px) {
+  .page-footer__logo-tablet {
+    display: block;
+  }
+
   .page-footer--mobile-hidden {
     display: block;
   }
@@ -90,5 +102,17 @@
 
   .page-footer__copyright {
     font-size: 18px;
+  }
+
+  .page-footer__logo-tablet {
+    display: none;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
   }
 }
